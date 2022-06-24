@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/807ba601-b71c-4a02-8d9f-44700a20791e/data.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220624%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220624T030845Z&X-Amz-Expires=86400&X-Amz-Signature=a9f8f9a5a972865906179a4a46b83847c0b45f4915f3a1a2a3642bc8cfa6f39a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22data.json%22&x-id=GetObject" type="text/javascript"></script>
+  <title>SWE frontend test</title>
+</head>
+
+<body>
+  <!-- To implement: https://saleswhale.notion.site/Frontend-Engineer-Junior-University-Grad-Saleswhale-Takehome-Assignment-900a1cb8b51c4826ac2bc2c9939dc787 -->
+  <!-- Vertical Navbar -->
+  <nav class="sidenav">
+    <a href="#" class="nav-link">
+      <img src="https://www.saleswhale.com/hubfs/lionfish/images/logos/logo-sw-icon.svg" alt="Saleswhale">
+    </a>
+    <ul>
+      <li><a href="#"><i class="fa-solid fa-message fa-2x"></i></a></li>
+      <li><a href="#" class="active"><i class="fa-solid fa-tower-observation fa-2x"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-address-card fa-2x"></i></a></li>
+      <li><a href="#"><i class="fa-solid fa-chart-line fa-2x"></i></a></li>
+    </ul>
+  </nav>
+
+  <header class="profile">
+    <div class="header-brand">
+      <h4 class="narwhal">NARWHAL</h4>
+    </div>
+    <div class="header-profile">
+      <p class="header">Teams</p>
+      <div class="nav-options">
+        <i class="fa-solid fa-print fa-2x">
+          <span class="notifications">3</span>
+        </i>
+        <div class="user">
+          <p>Hello, John</p>
+          <img src="https://i.pinimg.com/736x/b8/69/5f/b8695f007aea9a08a0419479217ca6aa.jpg" alt="" class="profilepic">
+          <button class="dropdown"><i class="fa-solid fa-angle-down"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <section class="toprow">
+      <div class="brand">
+        <i class="fa-solid fa-tower-observation fa-2x"></i>
+        <h2>Teams</h2>
+      </div>
+      <button class="create">
+        <i class="fa-solid fa-plus"></i>
+        <span>CREATE NEW TEAM</span>
+      </button>
+    </section>
+
+    <section id="options">
+      <div class="switch">
+        <button class="tab active">All</button>
+        <button class="tab">Favourites</button>
+        <button class="tab">Archived</button>
+      </div>
+      <div class="searchbox">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search Team Name ...">
+      </div>
+    </section>
+
+    <div class="display">
+      <div class="teams">
+        <div class="teams-top">
+          <p class="header">All Teams</p>
+          <p>Showing <span class="rendercount">X</span> out of <span class="totalcount">X</span> items</p>
+
+        </div>
+        <div class="teams-display">
+
+        </div>
+      </div>
+      <div class="activity">
+        <div class="activity-top">
+          <p class="header">Activity</p>
+        </div>
+        <div class="activities">
+          <div class="record">
+            <img src="https://cdn.dribbble.com/users/2878951/screenshots/14013747/media/603f0b853c409547dfa51cba996f375c.png?compress=1&resize=400x300" alt="" class="profilepic">
+            <div class="info">
+              <p>Julie Increased <span>Indeed.com's</span> quota</p>
+              <small>2 hours ago</small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
