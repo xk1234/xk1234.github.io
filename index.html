@@ -1,105 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Personal Website</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/807ba601-b71c-4a02-8d9f-44700a20791e/data.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220624%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220624T030845Z&X-Amz-Expires=86400&X-Amz-Signature=a9f8f9a5a972865906179a4a46b83847c0b45f4915f3a1a2a3642bc8cfa6f39a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22data.json%22&x-id=GetObject" type="text/javascript"></script>
-  <title>SWE frontend test</title>
-</head>
-
-<body>
-  <!-- To implement: https://saleswhale.notion.site/Frontend-Engineer-Junior-University-Grad-Saleswhale-Takehome-Assignment-900a1cb8b51c4826ac2bc2c9939dc787 -->
-  <!-- Vertical Navbar -->
-  <nav class="sidenav">
-    <a href="#" class="nav-link">
-      <img src="https://www.saleswhale.com/hubfs/lionfish/images/logos/logo-sw-icon.svg" alt="Saleswhale">
-    </a>
-    <ul>
-      <li><a href="#"><i class="fa-solid fa-message fa-2x"></i></a></li>
-      <li><a href="#" class="active"><i class="fa-solid fa-tower-observation fa-2x"></i></a></li>
-      <li><a href="#"><i class="fa-solid fa-address-card fa-2x"></i></a></li>
-      <li><a href="#"><i class="fa-solid fa-chart-line fa-2x"></i></a></li>
-    </ul>
-  </nav>
-
-  <header class="profile">
-    <div class="header-brand">
-      <h4 class="narwhal">NARWHAL</h4>
-    </div>
-    <div class="header-profile">
-      <p class="header">Teams</p>
-      <div class="nav-options">
-        <i class="fa-solid fa-print fa-2x">
-          <span class="notifications">3</span>
-        </i>
-        <div class="user">
-          <p>Hello, John</p>
-          <img src="https://i.pinimg.com/736x/b8/69/5f/b8695f007aea9a08a0419479217ca6aa.jpg" alt="" class="profilepic">
-          <button class="dropdown"><i class="fa-solid fa-angle-down"></i></button>
-        </div>
+  <body>
+    <nav>
+      <div class="name">
+        <img
+          src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+          alt=""
+          class="profilepic"
+        />
+        <h2>Name Here</h2>
       </div>
-    </div>
-  </header>
-
-  <div class="content">
-    <section class="toprow">
-      <div class="brand">
-        <i class="fa-solid fa-tower-observation fa-2x"></i>
-        <h2>Teams</h2>
-      </div>
-      <button class="create">
-        <i class="fa-solid fa-plus"></i>
-        <span>CREATE NEW TEAM</span>
+      <button class="contact">
+        Contact
       </button>
-    </section>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li>
+          <a href="#"><span class="fa-brands fa-github"></span></a>
+        </li>
+        <li>
+          <a href="#"><span class="fa-brands fa-linkedin"></span></a>
+        </li>
+      </ul>
+    </nav>
 
-    <section id="options">
-      <div class="switch">
-        <button class="tab active">All</button>
-        <button class="tab">Favourites</button>
-        <button class="tab">Archived</button>
-      </div>
-      <div class="searchbox">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search Team Name ...">
-      </div>
-    </section>
-
-    <div class="display">
-      <div class="teams">
-        <div class="teams-top">
-          <p class="header">All Teams</p>
-          <p>Showing <span class="rendercount">X</span> out of <span class="totalcount">X</span> items</p>
-
-        </div>
-        <div class="teams-display">
-
-        </div>
-      </div>
-      <div class="activity">
-        <div class="activity-top">
-          <p class="header">Activity</p>
-        </div>
-        <div class="activities">
-          <div class="record">
-            <img src="https://cdn.dribbble.com/users/2878951/screenshots/14013747/media/603f0b853c409547dfa51cba996f375c.png?compress=1&resize=400x300" alt="" class="profilepic">
-            <div class="info">
-              <p>Julie Increased <span>Indeed.com's</span> quota</p>
-              <small>2 hours ago</small>
-            </div>
-
+    <section id="content">
+      <div class="about">
+        <h2>About Me</h2>
+        <div class="about-text">
+          <img
+            src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+            alt=""
+            class="profilepic"
+          />
+          <div class="about-details">
+            <p class="title">Name: Name Here</p>
+            <p>
+              <strong
+                >Hobbies: Hobbies: Reading, personal projects, current
+                affairs</strong
+              >
+            </p>
           </div>
         </div>
+        <p>
+          In 2020, I witnessed the importance of software in today’s world
+          amidst the COVID-19 pandemic. Since then, I have been avidly studying
+          SWE through books, Udemy, and reading documentation.
+        </p>
       </div>
-    </div>
 
-  </div>
-  <script src="script.js"></script>
+      <div class="edu">
+        <div class="edu-top">
+          <h2>Education</h2>
+          <h4>2015-2020</h4>
+        </div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/8/85/NUSHS_Logo.png"
+          alt=""
+          class="NUSHS_Logo"
+        />
+      </div>
 
-</body>
+      <div class="tech">
+        <div class="tech-main">
+          <div class="tech-top">
+            <h2>Known Tech</h2>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png"
+              alt=""
+              class="tech-logo"
+            />
+          </div>
+          <p>
+            I started learning TypeScript in mid-2022 and am now able to write
+            all my JS code in TS, preventing a substantial number of errors. I
+            am familiar with both the TS syntax as well as TS debugging and TS
+            configuration.
+          </p>
+        </div>
 
+        <div class="tech-row">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png"
+            alt="TypeScript"
+            class="tech-logo selected"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+            alt="JavaScript"
+            class="tech-logo"
+          />
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/django.svg"
+            alt="Django"
+            class="tech-logo"
+          />
+          <img
+            src="https://www.gstatic.com/devrel-devsite/prod/v1a2d2d725c48303ffd65eb7122e57032dbf9bb148227658cacdfddf0dcae1e46/firebase/images/touchicon-180.png"
+            alt="Firebase"
+            class="tech-logo"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+            alt="CSS"
+            class="tech-logo"
+          />
+          <img
+            src="data:image/png;base64,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"
+            alt="HTML"
+            class="tech-logo"
+          />
+          <img
+            src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format"
+            alt="Figma"
+            class="tech-logo"
+          />
+        </div>
+      </div>
+
+      <div class="github">
+        <div class="github-top">
+          <span class="fa-brands fa-github fa-3x"></span>
+          <div class="github-desc">
+            <h2>Github Activity</h2>
+            <p>From Github API</p>
+          </div>
+        </div>
+        <div class="github-content"></div>
+      </div>
+    </section>
+
+    <script src="src/index.ts"></script>
+  </body>
 </html>
