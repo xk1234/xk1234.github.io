@@ -6,9 +6,13 @@ const github: HTMLDivElement = document.querySelector(".github-content")!;
 techs.addEventListener("click", (e) => {
   let target = e.target! as HTMLImageElement;
   if ((<HTMLImageElement>e.target!).tagName === "IMG") {
-    selected.innerText = target.alt;
-    alert(selected);
+    selected.innerText = target.alt;    
     imgselected.src = target.src;
+    for (let item of techs.children) {
+        item.classList.remove('selected')
+    }
+    target.classList.add('selected');
+    console.log(target)
   }
 });
 
@@ -53,7 +57,7 @@ function generateData() {
   let url: string = "https://api.github.com/repos/xk1234/xk1234.github.io/commits";
   let options = {
       headers: {
-        Authorization: "token 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"
+        Authorization: "token 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"
       }
   }
 
@@ -62,7 +66,7 @@ function generateData() {
       return response.json();
     })
     .then((data) => {
-        process(data)
+    process(data)
       console.log(data);
     })
     .catch((err) => {
