@@ -12,7 +12,6 @@ techs.addEventListener("click", (e) => {
             item.classList.remove('selected');
         }
         target.classList.add('selected');
-        console.log(target);
     }
 });
 function formatAMPM(date) {
@@ -59,8 +58,8 @@ function generateData() {
         return response.json();
     })
         .then((data) => {
-        process(data);
         console.log(data);
+        process(data);
     })
         .catch((err) => {
         console.log(err);

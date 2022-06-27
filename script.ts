@@ -12,7 +12,6 @@ techs.addEventListener("click", (e) => {
         item.classList.remove('selected')
     }
     target.classList.add('selected');
-    console.log(target)
   }
 });
 
