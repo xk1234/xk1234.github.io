@@ -54,9 +54,13 @@ function process(data: any) {
         <img src="${logo}" alt="${message}" class="profilepic">
             <div class="commit-info">
               <p class="title">Personal Website</p>
-              <p>${message}<span class="badge">${
-      month[date.getMonth()]
-    } ${date.getDate()}</span><span class="badge">${formatAMPM(date)}</span></p>
+              <p>${message}
+              <span class="badge">${
+                month[date.getMonth()]
+              } ${date.getDate()}</span><span class="badge">${formatAMPM(
+      date
+    )}</span>
+              </p>
             </div>
         `;
     if (counter < 5) {

@@ -48,7 +48,8 @@ h6 {
 
 p,
 a,
-button {
+button,
+span {
   font-family: "Quicksand";
   margin: 0;
   padding: 0;
@@ -263,11 +264,20 @@ section > div:hover {
   border: 3px solid black;
   color: black;
   margin-bottom: 0.7em;
+  overflow: auto;
+}
+
+.github-commit::-webkit-scrollbar {
+  display: none;
 }
 
 .github-commit p {
   margin: 0.3em 0;
   padding: 0;
+}
+
+.github-commit p:last-child {
+  white-space: nowrap;
 }
 
 .github-commit .profilepic {
@@ -283,7 +293,7 @@ section > div:hover {
 }
 
 /* tablet styles */
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   nav {
     flex-flow: row nowrap;
     height: 60px;
@@ -313,6 +323,11 @@ section > div:hover {
 
   .edu .edu-top {
     padding: 0 1em;
+  }
+
+  .github {
+    max-height: 300px;
+    overflow-y: auto;
   }
 }
 
@@ -365,5 +380,9 @@ section > div:hover {
   .NUSHS_Logo {
     width: 60%;
     margin: 1.5em 0;
+  }
+
+  .github {
+    max-height: none;
   }
 }
