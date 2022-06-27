@@ -290,6 +290,7 @@ section > div:hover {
   color: white;
   border-radius: 8px;
   margin-left: 0.5em;
+  font-size: 0.7em;
 }
 
 /* tablet styles */
