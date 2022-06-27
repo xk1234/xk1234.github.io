@@ -252,6 +252,36 @@ section > div:hover {
   justify-content: start;
   align-items: center;
   gap: 10%;
+  margin-bottom: 1em;
+}
+
+.github-commit {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.3em 1em;
+  background: var(--warning);
+  border: 3px solid black;
+  color: black;
+  margin-bottom: 0.7em;
+}
+
+.github-commit p {
+  margin: 0.3em 0;
+  padding: 0;
+}
+
+.github-commit .profilepic {
+  border: 2px solid black;
+}
+
+.badge {
+  padding: 0.2em 0.6em;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  margin-left: 0.5em;
 }
 
 /* tablet styles */
