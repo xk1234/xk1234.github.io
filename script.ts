@@ -66,8 +66,8 @@ function generateData() {
       return response.json();
     })
     .then((data) => {
-    process(data)
       console.log(data);
+      process(data);
     })
     .catch((err) => {
       console.log(err);
