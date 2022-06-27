@@ -1,8 +1,12 @@
 const techs: HTMLDivElement = document.querySelector(".tech-row")!;
 const selected: HTMLSpanElement = document.querySelector(".selected")!;
+const imgselected: HTMLImageElement = document.querySelector(".imgselected")!;
 
 techs.addEventListener("click", (e) => {
-  if (e.target!.tagName === "IMG") {
-    selected.innerText = e.target!.alt;
+  let target = e.target! as HTMLImageElement;
+  if ((<HTMLImageElement>e.target!).tagName === "IMG") {
+    selected.innerText = target.alt;
+    alert(selected)
+    imgselected.src = target.src;
   }
 });

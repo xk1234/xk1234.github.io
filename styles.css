@@ -232,7 +232,6 @@ section > div:hover {
 .tech-row img:hover {
   opacity: 100%;
   cursor: pointer;
-  border: 2px solid white;
 }
 
 .tech-row img.selected {
@@ -313,10 +312,11 @@ section > div:hover {
     overflow-y: auto;
     align-content: start;
     flex: 0 1 60%;
+    max-height: 270px;
   }
 
   .tech-row img {
-    margin: 0.2em;
+    margin: 0.6em;
   }
 
   .github {
@@ -332,5 +332,10 @@ section > div:hover {
   .tech p,
   nav a {
     font-size: 1.3em;
+  }
+
+  .NUSHS_Logo {
+    width: 60%;
+    margin: 1.5em 0;
   }
 }
