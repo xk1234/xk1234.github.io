@@ -89,6 +89,7 @@ nav {
   margin-bottom: 2em;
   height: 100px;
   align-content: space-around;
+  outline: 1px solid red;
 }
 
 nav .contact {
@@ -122,6 +123,8 @@ nav .name {
   align-items: center;
   gap: 5%;
   flex: 1 1 auto;
+  outline: 1px solid pink;
+  flex-grow: 1;
 }
 
 nav ul {
@@ -132,6 +135,8 @@ nav ul {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  outline: 1px solid blue;
+  flex-wrap: nowrap;
 }
 
 nav ul a {
