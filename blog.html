@@ -24,11 +24,10 @@
       <button class="contact">Contact</button>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="learncs.html">CS Resources</a></li>
-        <li><a href="learnds.html">DS Resources</a></li>
-        <li><a href="links.html">Interesting Links</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="learncs.html">CS</a></li>
+              <li><a href="learnds.html">DS</a></li>
         <li>
           <a href="https://github.com/xk1234"
             ><span class="fa-brands fa-github"></span
@@ -42,33 +41,5 @@
       </ul>
     </nav>
     <h1>Blog - WIP</h1>
-    <ul class="posts">
-        <li>Loading</li>
-    </ul>
-    <script>
-        let PROJECT_ID = "hvocnetm";
-        let DATASET = "production";
-        let QUERY = encodeURIComponent('*[_type == "post"]');
-        let URL = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${QUERY}`;
-        fetch(URL)
-        .then((res) => res.json())
-        .then(({ result }) => {
-          // get the list element, and the first item
-          let list = document.querySelector("ul.posts");
-          let firstListItem = document.querySelector("ul.posts li");
-
-          if (result.length > 0) {
-            // remove the placeholder content
-            list.removeChild(firstListItem);
-            result.forEach((post) => {
-                console.log(post)
-              let listItem = document.createElement("li");
-              listItem.textContent = post?.title + " - " + post?.excerpt;
-              list.appendChild(listItem);
-            });
-          }
-        })
-        .catch((err) => console.error(err));
-    </script>
   </body>
 </html>
