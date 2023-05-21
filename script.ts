@@ -14,7 +14,7 @@ const techdesc: { [key: string]: string } = {
     CSS: "I fundamentally understand the basic principles of CSS including the box model, responsiveness, etc, and have utilized these principles to make my projects responsive",
     React: "I have in depth knowledge behind key React principles, including render/re-render cycles, building reusable components, custom hooks, etc. I have also successfully integrated my React apps with a variety of libraries such as react-router, react-markdown, supabase, and more",
     C: "I have a good understanding of low-level programming in C, including memory management, pointers, and the use of libraries. I have written a full Unix C shell in C and added a feature to Memcached, a 50k LOC production key value store",
-    "C++": "I have solid experience C++ and am familiar with the STL library",
+    Cpp: "I have solid experience C++ and am familiar with the STL library",
     Python: "I have used Python extensively for data analysis as well as web scraping. I am familiar with libraries such as Pandas, NumPy, Matplotlib and Selenium",
     Jupyter: "I am proficient in using Jupyter notebooks for data exploration and analysis. I can create readable notebooks with clear, organized documentation and visualizations",
     Git: "I have experience with Git and Github for version control. I can use branching, merging, and rebasing to manage code changes effectively"
